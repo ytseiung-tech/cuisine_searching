@@ -1,0 +1,5 @@
+// This is a placeholder image component
+// In a real app, you would use actual images
+export const PlaceholderImage = {
+  uri: 'https://via.placeholder.com/300x200?text=Restaurant+Image'
+};
