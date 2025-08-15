@@ -11,11 +11,9 @@ import SearchScreen from './screens/SearchScreen';
 import RestaurantDetailScreen from './screens/RestaurantDetailScreen';
 import MapScreen from './screens/MapScreen';
 import ProfileScreen from './screens/ProfileScreen';
-import LoginScreen from './screens/LoginScreen';
 import AddRestaurantScreen from './screens/AddRestaurantScreen';
 
 export type RootStackParamList = {
-  Login: undefined;
   Main: undefined;
   RestaurantDetail: { restaurantId: string };
   AddRestaurant: undefined;
@@ -87,13 +85,8 @@ export default function App() {
       <StatusBar style="auto" />
       <Stack.Navigator 
         screenOptions={{ headerShown: false }}
-        initialRouteName="Login"
+        initialRouteName="Main"
       >
-        <Stack.Screen 
-          name="Login" 
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
         <Stack.Screen name="Main" component={MainTabs} />
         <Stack.Screen 
           name="RestaurantDetail" 

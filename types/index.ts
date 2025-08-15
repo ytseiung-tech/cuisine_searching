@@ -1,11 +1,16 @@
 export type CuisineType = 
-  | 'japanese' 
-  | 'chinese' 
-  | 'american' 
-  | 'french' 
-  | 'dessert' 
-  | 'healthy' 
-  | 'brunch';
+  | 'japanese'    // 日式料理
+  | 'chinese'     // 中式料理
+  | 'american'    // 美式料理
+  | 'french'      // 法式料理
+  | 'dessert'     // 甜點咖啡
+  | 'healthy'     // 健康輕食
+  | 'brunch'      // 早午餐
+  | 'korean'      // 韓式料理
+  | 'italian'     // 義式料理
+  | 'thai'        // 泰式料理
+  | 'vietnamese'  // 越式料理
+  | 'indian';     // 印度料理
 
 export type PriceRange = 
   | '0-250' 
